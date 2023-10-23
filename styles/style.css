@@ -144,7 +144,7 @@ input:focus {
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
-  position: absolute;
+  /* position: absolute; */
   content: "";
   inset: 1px;
   background-color: #fff;
