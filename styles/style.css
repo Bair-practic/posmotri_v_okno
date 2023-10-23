@@ -45,6 +45,7 @@ ol {
   align-content: end;
   padding: 133px 30px;
   width: 1200px;
+  height: 800px;
 }
 
 .search-form {
@@ -144,7 +145,7 @@ input:focus {
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
-  /* position: absolute; */
+  position: absolute;
   content: "";
   inset: 1px;
   background-color: #fff;
@@ -180,13 +181,17 @@ button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
+
 .search-form__submit-button {
   align-self: end;
   width: 194px;
+  
 }
 
 .more-button {
-  width: 100%;
+  width: 99%;
+  margin: 2px;
+
 }
 
 .title {
