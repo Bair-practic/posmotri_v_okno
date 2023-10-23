@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -39,7 +39,7 @@ ol {
 }
 
 .content {
-  display: grid;  
+  display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
   align-content: end;
@@ -64,7 +64,7 @@ ol {
 }
 
 .title {
-  margin-bottom: 26px;  /*возможно было бы лушче сделать родителя флексом и задать gap, но я подумал зачем ради этого делать*/
+  margin-bottom: 26px; /*возможно было бы лушче сделать родителя флексом и задать gap, но я подумал зачем ради этого делать*/
 }
 
 .result__video-container {
@@ -72,7 +72,6 @@ ol {
   height: 386px;
   margin-bottom: 16px;
   margin-top: 78px;
-  
 }
 
 .result__video {
@@ -99,7 +98,8 @@ ol {
   margin: 2px;
 }
 
-.result__video-container, .content__list {
+.result__video-container,
+.content__list {
   position: relative;
 }
 
@@ -109,25 +109,23 @@ ol {
   margin-bottom: 5px;
 }
 
-
-.search-form__checkbox-list{
+.search-form__checkbox-list {
   display: flex;
   column-gap: 15px;
 }
 
 .search-form__textfield {
   appearance: none;
-  font-family: inherit; 
-  color: rgba(255, 255, 255, 0.70);
+  font-family: inherit;
+  color: rgba(255, 255, 255, 0.7);
   width: 225px;
   background-color: transparent;
   border: none;
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;  
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   font-size: 18px;
   font-weight: 400;
   padding: 2px 0;
-  
 }
 
 input:focus {
@@ -135,7 +133,7 @@ input:focus {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;;
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
@@ -145,21 +143,20 @@ input:focus {
   outline-offset: 1px;
 }
 
-input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
-  position: absolute; 
-  content: '';
+input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
+  position: absolute;
+  content: "";
   inset: 1px;
   background-color: #fff;
   width: 15px;
   height: 15px;
-
 }
 
 .button {
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   cursor: pointer;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Fira Sans Condensed;
   font-size: 18px;
@@ -171,7 +168,7 @@ button:hover {
   text-decoration: underline;
 }
 
-button:active{
+button:active {
   background: #545050;
 }
 
@@ -182,7 +179,6 @@ button:focus {
 button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
-
 }
 .search-form__submit-button {
   align-self: end;
@@ -193,8 +189,8 @@ button:focus-visible {
   width: 100%;
 }
 
-.title {  
-  color: #FFF;
+.title {
+  color: #fff;
   font-family: Oswald;
   font-size: 75px;
   font-style: normal;
@@ -230,7 +226,6 @@ button:focus-visible {
   outline: 1px solid #fff;
 }
 
-
 .content__card-link_current {
   background: #545050;
 }
@@ -250,7 +245,6 @@ button:focus-visible {
   line-height: 90%;
 }
 
-
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -259,7 +253,7 @@ button:focus-visible {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
+}
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
@@ -269,5 +263,3 @@ button:focus-visible {
 .search-form__label:hover > .search-form__label-text {
   text-decoration: underline;
 }
-
-
